@@ -76,7 +76,7 @@ const Header = ({ darkMode, toggleDarkMode }: HeaderProps) => {
             ))}
           </nav>
 
-          {/* Theme Toggle & Mobile Menu Button */}
+          {/* Theme Toggle & Admin Link & Mobile Menu Button */}
           <div className="flex items-center space-x-4">
             <Button
               variant="ghost"
@@ -87,6 +87,13 @@ const Header = ({ darkMode, toggleDarkMode }: HeaderProps) => {
             >
               {darkMode ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
             </Button>
+            
+            <a 
+              href="/auth" 
+              className="hidden md:inline-flex items-center px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors text-sm font-medium"
+            >
+              Admin
+            </a>
 
             <Button
               variant="ghost"
@@ -114,6 +121,12 @@ const Header = ({ darkMode, toggleDarkMode }: HeaderProps) => {
                 {item.label}
               </button>
             ))}
+            <a 
+              href="/auth" 
+              className="block w-full text-left px-4 py-2 text-foreground hover:text-primary hover:bg-muted rounded-lg transition-all duration-200"
+            >
+              Admin
+            </a>
           </nav>
         </div>
       </div>

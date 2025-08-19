@@ -5,6 +5,7 @@ import About from '@/components/About';
 import Services from '@/components/Services';
 import Portfolio from '@/components/Portfolio';
 import News from '@/components/News';
+import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 import BackToTop from '@/components/BackToTop';
 import Preloader from '@/components/Preloader';
@@ -88,6 +89,7 @@ const Index = ({ darkMode, toggleDarkMode }: IndexProps) => {
           <Services />
           <Portfolio />
           <News />
+          <Contact />
         </main>
         
         <Footer />
