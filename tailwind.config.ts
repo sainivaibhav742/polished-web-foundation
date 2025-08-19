@@ -18,6 +18,10 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'sans': ['Inter', 'system-ui', 'sans-serif'],
+				'serif': ['Playfair Display', 'Georgia', 'serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -62,6 +66,19 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				}
+			},
+			spacing: {
+				'header': 'var(--header-height)',
+			},
+			boxShadow: {
+				'professional-sm': 'var(--shadow-sm)',
+				'professional-md': 'var(--shadow-md)',
+				'professional-lg': 'var(--shadow-lg)',
+			},
+			transitionDuration: {
+				'fast': 'var(--transition-fast)',
+				'normal': 'var(--transition-normal)',
+				'slow': 'var(--transition-slow)',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
